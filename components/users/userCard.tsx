@@ -16,13 +16,15 @@ const UserCard = ({ user }: any) => {
       </div>
 
       <h2 className="text-lg font-bold">{user.name}</h2>
-      <p className="text-sm">
-        {user.designation} @ {user.company}
-      </p>
+
+      {user.designation && (
+        <p className="text-sm">
+          {user.designation} @ {user.company}
+        </p>
+      )}
 
       <span className="pill h-6 px-2 text-center absolute top-2 right-2 text-xs uppercase bg-slate-800 rounded flex items-center justify-center text-white/70 font-medium">
-        {" "}
-        {user.followers}{" "}
+        {user.followers}
       </span>
 
       {/* <p className="text-sm">{user.company} @</p> */}
