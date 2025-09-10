@@ -10,12 +10,12 @@ interface User {
 
 const UserCard = ({ user }: any) => {
   return (
-    <div className="user-card relative bg-slate-900 px-5 py-10 flex flex-col items-center rounded-lg text-center">
-      <div className="user-avatar h-16 w-16 flex items-center justify-center bg-slate-800 rounded-full text-xl font-bold mb-4">
+    <div className="user-card relative bg-white px-5 py-10 flex flex-col items-center rounded-3xl text-center card-shadow">
+      <div className="user-avatar h-16 w-16 flex items-center justify-center bg-slate-100 rounded-full text-xl font-bold mb-4">
         {user.name.charAt(0)}
       </div>
 
-      <h2 className="text-lg font-bold">{user.name}</h2>
+      <h2 className="text-lg font-semibold">{user.name}</h2>
 
       {user.designation && (
         <p className="text-sm">
@@ -23,9 +23,9 @@ const UserCard = ({ user }: any) => {
         </p>
       )}
 
-      <span className="pill h-6 px-2 text-center absolute top-2 right-2 text-xs uppercase bg-slate-800 rounded flex items-center justify-center text-white/70 font-medium">
+      {/* <span className="pill h-6 px-2 text-center absolute top-2 right-2 text-xs uppercase bg-slate-950 rounded flex items-center justify-center text-white/70 font-medium">
         {user.followers}
-      </span>
+      </span> */}
 
       {/* <p className="text-sm">{user.company} @</p> */}
 
