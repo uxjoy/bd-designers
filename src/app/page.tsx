@@ -13,7 +13,7 @@ export default function Home() {
     <div className="font-sans">
       <BackToTop />
       <section className="header-section p-2">
-        <div className="bg-zinc-950 text-white p-4 min-h-[550px] flex flex-col justify-center items-center text-center gap-5 rounded-4xl">
+        <div className="bg-zinc-900 text-white p-4 min-h-[550px] flex flex-col justify-center items-center text-center gap-5 rounded-4xl">
           <div className="bg-white/10 font-medium py-1 px-3 rounded-full border border-white/10 flex items-center gap-1">
             {" "}
             <RiUserLocationFill size={18} />
@@ -56,7 +56,7 @@ export default function Home() {
 
       <section className="users">
         <div className="container mx-auto px-4 py-10">
-          <div className="user-list grid grid-cols-4 gap-4">
+          <div className="user-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {linkedinUsers.map((user, i) => (
               <UserCard key={i} user={user} />
             ))}
