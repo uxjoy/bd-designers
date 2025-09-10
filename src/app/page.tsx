@@ -30,14 +30,16 @@ export default function Home() {
             Building the future of digital experiences.
           </p>
 
-          <div className="flex gap-8 font-semibold mt-4">
-            <p className="flex gap-1.5 items-center">
-              <RiGroupFill size={18} />
+          <div className="flex items-center gap-4 font-semibold mt-4">
+            <p className="flex gap-2 items-center">
+              <RiGroupFill size={18} className="text-orange-400" />
               <span> {linkedinUsers.length} Designers </span>
             </p>
 
-            <p className="flex gap-1.5 items-center">
-              <RiBuildingFill size={18} />
+            <div className="w-1 h-1 rounded-full bg-white/15"></div>
+
+            <p className="flex gap-2 items-center">
+              <RiBuildingFill size={18} className="text-orange-400" />
 
               <span>
                 {
